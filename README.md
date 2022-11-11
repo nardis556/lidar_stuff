@@ -27,7 +27,9 @@ catkin_make
 ```
 
 ## CGAL and pcl_viewer (optional)
-```sudo apt-get install libcgal-dev pcl-tools```
+```
+sudo apt-get install libcgal-dev pcl-tools
+```
 
 ## opencv installation
 `clone repository. Repo modified to work with newer libs`

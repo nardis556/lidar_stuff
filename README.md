@@ -34,12 +34,12 @@ catkin_make
 ## opencv installation
 `clone repository. Repo modified to work with newer libs`
 ```
-git clone https://github.com/nardis556/Install-OpenCV.git
+cd && git clone https://github.com/nardis556/Install-OpenCV.git
 cd /home/$USER/Install-OpenCV/ubuntu
 chmod +x *
 ./opencv_latest.sh
 ```
-## verify opencv installation with
+### verify opencv installation with
 ```
 pkg-config --modversion opencv
 ```

@@ -37,7 +37,7 @@ cd /home/$USER/Install-OpenCV/ubuntu
 chmod +x *
 ./opencv_latest.sh
 ```
-### verify opencv installation with
+##### verify opencv installation with
 ```
 pkg-config --modversion opencv
 ```

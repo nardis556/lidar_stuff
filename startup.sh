@@ -5,6 +5,6 @@ function start() {
     bash -c 'source /home/$USER/catkin_ws/devel/setup.bash'
 }
 
-start()
+start
 
 source ~/.bashrc

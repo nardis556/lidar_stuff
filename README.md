@@ -39,6 +39,17 @@ cd /home/$USER/Install-OpenCV/ubuntu
 chmod +x *
 ./opencv_latest.sh
 ```
+## verify opencv installation with
+```
+pkg-config --modversion opencv
+```
 
-
-
+## build r3live
+```
+cd && mkdir catkin_ws
+cd /home/$USER/catkin_ws/src
+git clone https://github.com/hku-mars/r3live.git
+cd ../
+catkin_make
+source ~/catkin_ws/devel/setup.bash
+```

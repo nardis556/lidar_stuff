@@ -49,5 +49,27 @@ cd /home/$USER/catkin_ws/src
 git clone https://github.com/hku-mars/r3live.git
 cd ../
 catkin_make
-source ~/catkin_ws/devel/setup.bash
 ```
+## build usb-cam
+```
+cd /home/$USER/catkin_ws/src/
+git clone https://github.com/ros-drivers/usb_cam.git
+cd ../
+catkin_make
+```
+## build velodyne-driver
+```
+cd /home/$USER/catkin_ws/src/
+git clone https://github.com/ros-drivers/velodyne.git
+cd ../
+catkin_make
+```
+## add to bash
+```
+cd && git clone https://github.com/nardis556/lidar_stuff/blob/main/startup.sh
+cd lidar_stuff && chmod a+x startup.sh
+bash startup.sh
+```
+
+## examples
+`See https://github.com/hku-mars/r3live for examples`

@@ -31,7 +31,15 @@ catkin_make
 sudo apt-get install libcgal-dev pcl-tools
 ```
 
-## opencv installation
+## opencv
+##### install deps
+```
+sudo add-apt-repository 'deb http://security.ubuntu.com/ubuntu xenial-security main'
+sudo apt update
+sudo apt install libjasper1 libjasper-dev libpcap0.8-dev
+sudo apt install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+```
+##### opencv installation
 `clone repository. Repo modified to work with newer libs`
 ```
 cd && git clone https://github.com/nardis556/Install-OpenCV.git

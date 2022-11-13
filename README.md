@@ -12,6 +12,11 @@ sudo apt update
 sudo apt install ros-noetic-desktop-full ros-noetic-cv-bridge ros-noetic-nmea-msgs ros-noetic-tf ros-noetic-message-filters ros-noetic-image-transport ros-noetic-image-transport* python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
 ```
 
+## create workspace
+```
+mkdir /home/$USER/catkin_ws
+```
+
 #### optional
 ```
 source /opt/ros/noetic/setup.bash

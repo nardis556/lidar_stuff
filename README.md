@@ -51,7 +51,7 @@ chmod +x *
 ```
 pkg-config --modversion opencv
 ```
-## build packages
+## build ROS packages
 #### build r3live
 ```
 cd && mkdir catkin_ws

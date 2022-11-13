@@ -12,7 +12,7 @@ sudo apt update
 sudo apt install ros-noetic-desktop-full ros-noetic-cv-bridge ros-noetic-nmea-msgs ros-noetic-tf ros-noetic-message-filters ros-noetic-image-transport ros-noetic-image-transport* python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
 ```
 
-## optional
+#### optional
 ```
 source /opt/ros/noetic/setup.bash
 ```
@@ -51,8 +51,8 @@ chmod +x *
 ```
 pkg-config --modversion opencv
 ```
-
-## build r3live
+## build packages
+#### build r3live
 ```
 cd && mkdir catkin_ws
 cd /home/$USER/catkin_ws/src
@@ -60,14 +60,14 @@ git clone https://github.com/hku-mars/r3live.git
 cd ../
 catkin_make
 ```
-## build usb-cam
+#### build usb-cam
 ```
 cd /home/$USER/catkin_ws/src/
 git clone https://github.com/ros-drivers/usb_cam.git
 cd ../
 catkin_make
 ```
-## build velodyne-driver
+#### build velodyne-driver
 ```
 cd /home/$USER/catkin_ws/src/
 git clone https://github.com/ros-drivers/velodyne.git
@@ -76,7 +76,7 @@ git clone https://github.com/nardis556/velodyne_gps_imu
 cd ../
 catkin_make
 ```
-## add to bash
+#### add to bash
 ```
 cd && git clone https://github.com/nardis556/lidar_stuff/blob/main/startup.sh
 cd lidar_stuff && chmod a+x startup.sh
@@ -85,3 +85,28 @@ bash startup.sh
 
 ## examples
 `See https://github.com/hku-mars/r3live for examples`
+
+#### initialize ros with 
+```
+roscore
+```
+
+#### start velodyne pointcloud
+```
+roslaunch velodyne_pointcloud 32e_points.launch
+```
+
+#### start camera
+```
+roslaunch usb_cam usb_cam-test.launch
+```
+
+#### start IMU
+```
+rosrun velodyne_gps_imu gpsimu_driver
+```
+
+#### record all topics
+```
+rosbag record -a
+```

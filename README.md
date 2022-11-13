@@ -71,6 +71,8 @@ catkin_make
 ```
 cd /home/$USER/catkin_ws/src/
 git clone https://github.com/ros-drivers/velodyne.git
+cd velodyne
+git clone https://github.com/nardis556/velodyne_gps_imu
 cd ../
 catkin_make
 ```

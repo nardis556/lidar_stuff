@@ -72,7 +72,7 @@ git clone https://github.com/ros-drivers/usb_cam.git
 cd ../
 catkin_make
 ```
-#### build velodyne-driver
+#### build velodyne-driver with IMU
 ```
 cd /home/$USER/catkin_ws/src/
 git clone https://github.com/ros-drivers/velodyne.git

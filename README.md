@@ -48,7 +48,7 @@ sudo apt install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 `clone repository. Repo modified to work with newer libs`
 ```
 cd && git clone https://github.com/nardis556/Install-OpenCV.git
-cd /home/$USER/Install-OpenCV/ubuntu
+cd /home/$USER/Install-OpenCV/Ubuntu
 chmod +x *
 ./opencv_latest.sh
 ```

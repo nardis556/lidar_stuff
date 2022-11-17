@@ -83,9 +83,9 @@ catkin_make
 ```
 #### add to bash
 ```
-cd && git clone https://github.com/nardis556/lidar_stuff/blob/main/startup.sh
-cd lidar_stuff && chmod a+x startup.sh
-bash startup.sh
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+echo "source /home/$USER/catkin_ws/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ## examples
